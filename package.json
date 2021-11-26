@@ -1,0 +1,39 @@
+{
+  "name": "babel-plugin-typescript-non-null-assertion-runtime",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "repository": "git@github.com:Kingwl/babel-plugin-typescript-non-null-assertion-runtime.git",
+  "author": "kingwl <kingwenlu@gmail.com>",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-syntax-typescript": "^7.16.0",
+    "@babel/types": "^7.16.0",
+    "@types/babel-generator": "^6.25.4",
+    "@types/babel-template": "^6.25.2",
+    "@types/babel-traverse": "^6.25.7",
+    "@types/babel-types": "^7.0.11",
+    "@types/babel__core": "^7.1.16",
+    "@types/babylon": "^6.16.6",
+    "babel-generator": "^6.26.1",
+    "babel-plugin-tester": "^10.1.0",
+    "babel-template": "^6.26.0",
+    "babel-traverse": "^6.26.0",
+    "babel-types": "^6.26.0",
+    "babylon": "^7.0.0-beta.34",
+    "esbuild": "^0.13.15",
+    "jest": "^27.3.1",
+    "prettier": "^2.5.0",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "test": "jest",
+    "rm:output": "rm -r ./tests/fixtures/*/output.ts",
+    "prettier": "prettier -c -w ./src/**/*.ts ./tests/index.test.ts"
+  },
+  "peerDependencies": {
+    "@babel/plugin-syntax-typescript": "^7.16.0"
+  }
+}

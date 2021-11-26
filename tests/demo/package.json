@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-syntax-typescript": "^7.16.0",
+    "babel-plugin-typescript-non-null-assertion-runtime": "link:../.."
+  },
+  "scripts": {
+    "test": "babel ./index.ts --out-file out.ts --plugins=babel-plugin-typescript-non-null-assertion-runtime"
+  }
+}

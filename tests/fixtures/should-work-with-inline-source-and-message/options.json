@@ -1,0 +1,4 @@
+{
+    "errorMessageIncludeSource": true,
+    "assertMessage": "bar"
+}
