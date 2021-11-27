@@ -4,7 +4,11 @@
         "target": "es6",
         "module": "esnext",
         "moduleResolution": "node",
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "outDir": "dist",
+        "declaration": true,
+        "sourceMap": true,
+        "emitDeclarationOnly": true
     },
     "include": [
         "src"
